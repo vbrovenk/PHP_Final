@@ -1,0 +1,201 @@
+body {
+	background-color: #505050;
+}
+
+#container {
+	width: 1420px;
+	height: 835px;
+	margin: 17px auto;
+}
+
+#header {
+	height: 137px;
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 10px 10px 12px black;
+
+}
+
+#day_42 {
+	width: 426px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#reload {
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#reload  img {
+	width: 20px;
+}
+
+#close {
+	float: right;
+	margin-top: 107px;
+	margin-right: -20px;
+}
+
+#loupe {
+	float: right;
+	margin-top: 10px;
+}
+
+#leftbar {
+	background-color: #909090;
+	width: 140px;
+	height: 425px;
+	margin-top: 20px;
+	margin-left: 30px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 12px black;
+	float: left;
+}
+
+#leftbar #Advance {
+	width: 70px;
+	margin-top: 15px;
+	margin-left: 32px;
+}
+
+#leftbar #Take {
+	width: 70px;
+	margin-top: 6px;
+	margin-bottom: 0px;
+	margin-left: 32px;
+}
+
+#leftbar div {
+	width: 70px;
+	height: 65px;
+	margin-left: 27px;
+	margin-top: 1px;
+	border: 5px solid red;
+	border-radius: 4px;
+}
+
+#leftbar #Look {
+	width: 70px;
+}
+
+#leftbar #Use {
+	width: 70px;
+	margin-left: 32px;
+	margin-top: 5px;
+}
+
+#leftbar #Speak {
+	width: 70px;
+	margin-left: 32px;
+	margin-top: 6px;
+}
+
+#content {
+	width: 1020px;
+	height: 582px;
+	background-color: #909090;
+	float: left;
+	margin-top: -4px;
+	margin-left: 30px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 12px black;
+}
+
+#content #cluster {
+	width: 1000px;
+	height: 562px;
+	margin: 10px;
+}
+
+#rightbar {
+	background-color: #909090;
+	width: 140px;
+	height: 425px;
+	float: left;
+	margin-left: 30px;
+	margin-top: -4px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 12px black;
+}
+
+#rightbar #book {
+	width: 70px;
+	margin-left: 35px;
+	margin-top: 15px;
+}
+
+#rightbar #towel {
+	width: 70px;
+	margin-left: 35px;
+	margin-top: 6px;
+}
+
+#rightbar #bricks{
+	width: 120px;
+	height: 70px;
+	margin-left: 10px;
+	margin-top: 1px;
+	background-image: url("resources/brick.jpg");
+}
+
+#greenbox {
+	width: 520px;
+	height: 170px;
+	background-color: #88ff89;
+	position: absolute;
+	top: 680px;
+	left: 191px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 12px black;
+
+	font-family: Verdana;
+    letter-spacing: 0.25px;
+    font-size: 15.5px;
+}
+
+#first {
+	margin-left: 10px;
+	margin-top: 8px;
+}
+
+p #big {
+	font-size: 33px;
+	font-family: Georgia;
+	letter-spacing: 1px;
+}
+
+#red-shadow {
+	letter-spacing: 0.4px;
+	text-shadow: 3px 4px 5px red;
+}
+
+#second {
+	font-style: italic;
+	margin-top: -17px;
+	margin-left: 9px;
+}
+
+form  {
+	margin-top: -12px;
+}
+
+form input[type="text"] {
+	margin-left: 12px;
+	width: 376px;
+	height: 15px;
+	border: 2px solid #eeeeee;
+	border-left-color: #9d9d9d;
+	border-top-color: #9d9d9d;
+}
+
+form input[type="button"] {
+	width: 78px;
+	height: 21px;
+	background-color: #eeeeee;
+	border-radius: 1px;
+	font-size: 12px;
+	letter-spacing: 0.55px;
+	border: 1px solid #a8a4a5;
+}
