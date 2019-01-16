@@ -6,8 +6,26 @@
         $right = trim($argv[3]);
 
         if (is_numeric($left) && is_numeric($right)) {
-            if ($sign === "+") {
+            if ($sign == "+") {
                 print($left + $right . "\n");
+            }
+            else if ($sign == "-") {
+                print($left - $right . "\n");
+            }
+            else if ($sign == "*") {
+                print($left * $right . "\n");
+            }
+            else if ($sign == "/") {
+                if ((float)$right === 0.0) {
+                    return;   
+                }
+                print($left / $right . "\n");
+            }
+            else if ($sign == "%") {
+                if ((float)$right === 0.0) {
+                    return;   
+                }
+                print($left % $right . "\n");
             }
             else {
                 echo "Incorrect Parameters\n";
