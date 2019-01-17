@@ -5,7 +5,7 @@ $months = "(([Jj]anvier|[Ff]évrier|[Mm]ars|[Aa]vril|[Mm]ai|[Jj]uin|[Jj]uillet|[
 
 if ($argc == 2) {
     date_default_timezone_set('Europe/Paris');
-    $patter = "/^" . $week . " [1-9]{1,2} " . $months . " \d{4} \d{2}:\d{2}:\d{2}$/";
+    $patter = "/^" . $week . " \d{1,2} " . $months . " \d{4} \d{2}:\d{2}:\d{2}$/";
     if (preg_match($patter, $argv[1])) {
        $fr = array (
             "/[Ll]undi/" => "Monday",
