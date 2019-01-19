@@ -1,0 +1,43 @@
+.product {
+    float: left;
+    width: 300px;
+    height: 320px;
+    margin-top: 15px;
+    margin-left: 50px;
+    border: 1px solid red;
+    border: 1px solid #E8E8E8;
+    
+}
+
+.product .product_name {
+    padding-left: 30px;
+}
+
+.product img {
+    width: 250px;
+    height: 190px;
+    position: relative;
+    left: 25px;
+    top: 10px;
+}
+
+.price {
+    background-color: rgb(241, 189, 15);
+    color: rgb(240, 84, 84);
+    margin: 15px auto;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 0px;
+}
+
+.product input[type="button"] {
+    margin-left: 90px;
+    width: 120px;
+    font-size: 21px;
+    color: white;
+    height: 30px;
+    border-radius: 10px;
+    background-color: green;
+}

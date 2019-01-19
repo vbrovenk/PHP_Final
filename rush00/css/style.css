@@ -1,0 +1,156 @@
+body {
+    background-color: #f0f5f5;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    height: 900px;
+    background-color: white;
+    /* border: 1px solid red; */
+}
+
+.logo {
+    float: left;
+}
+.logo img{
+    width: 110px;
+}
+
+.pannel {
+    height: 60px;
+    background-color: #4682B4;
+    /* border: 1px solid red; */
+}
+
+.pannel .login {
+    float: right;
+    width: 60px;
+    height: 60px;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.pannel .login img {
+    margin-top: 2px;
+    margin-left: 5px;
+    width: 30px;
+}
+
+.pannel .login a {
+    color: rgb(85, 83, 83);
+    text-decoration: none;
+}
+
+.pannel .login:hover {
+    background-color: rgb(50, 95, 133);
+}
+
+.pannel .basket {
+    width: 60px;
+    height: 60px;
+    float: right;
+}
+
+.pannel .basket img {
+    width: 60px;
+}
+
+.pannel .basket:hover {
+    background-color: rgb(50, 95, 133);
+} 
+
+
+.menu {
+    width: 85%;
+    height: 60px;
+    margin: 15px auto;
+    background-color: #004d00;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+}
+
+.topmenu {
+    margin: 0px;
+}
+
+.topmenu ul{
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topmenu > li {
+    display: inline-block;
+    height: 60px;
+    position: relative;
+  }
+
+.topmenu > li:hover {
+    background-color: #003300;
+    border-radius: 3px;
+}
+.topmenu a {
+    display: block;
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.pruducts {
+    width: 85%;
+    height: 700px;
+    margin: 40px auto;
+    border: 1px solid #E8E8E8;
+}
+
+.product {
+    float: left;
+    width: 200px;
+    height: 320px;
+    margin-top: 15px;
+    margin-left: 130px;
+    border: 1px solid red;
+    border: 1px solid #E8E8E8;
+    
+}
+
+.product .product_name {
+    padding-left: 30px;
+}
+
+.product img {
+    width: 150px;
+    height: 190px;
+    position: relative;
+    left: 25px;
+    top: 10px;
+}
+
+.price {
+    background-color: rgb(241, 189, 15);
+    color: rgb(240, 84, 84);
+    margin: 15px auto;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 0px;
+}
+
+.product input[type="button"] {
+    margin-left: 40px;
+    width: 120px;
+    font-size: 21px;
+    color: white;
+    height: 30px;
+    border-radius: 10px;
+    background-color: green;
+}
