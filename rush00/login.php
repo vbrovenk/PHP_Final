@@ -24,9 +24,9 @@ if (isset($_POST['login']) && isset($_POST['passwd']) && $_POST['submit'] == "OK
 		// }
 	}
 }
-else {
-	echo "empty fields";
-}
+// else {
+// 	echo "empty fields";
+// }
 ?>
 
 <html>
