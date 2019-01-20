@@ -1,6 +1,12 @@
 <?php
 session_start();
-$link = mysqli_connect("localhost", "root", "111111", "table");
+
+$db_host = "localhost";
+$db_user = "root";
+$db_password = "111111";
+$db_name = "rush0";
+
+$link = mysqli_connect($db_host, $db_user, $db_password, $db_name);
 
 if($link)
     echo 'Соединение установлено.';

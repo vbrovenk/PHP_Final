@@ -3,8 +3,7 @@
 require_once 'database.php';
 if(isset($_POST['submit']))
 {
-
-    $mas = []; 
+    $mas = [];
     $log = htmlspecialchars($_POST['login']);
     $pass = htmlspecialchars($_POST['passwd']);
     if ($log == '' || $pass == '' || $_POST['passwd2'] == '')
@@ -13,20 +12,23 @@ if(isset($_POST['submit']))
         $mas[] = 'Введенные пароли не совпадают';
     if (empty($mas))
     {
-        $query = "SELECT * FROM `users` WHERE `name` = $log";
+        $query = "USE `rush00`";
+        $query = "SELECT * FROM `users` WHERE `login` = '$log'";
         $query = mysqli_query($link, $query);
         if (mysqli_num_rows($query) > 0)
             echo "Такой уже есть";
         else
         {
             $_SESSION['login'] = $log;
-            $query = "INSERT INTO `users` (name, password) VALUES($log, $pass)";
+            // mysqli_query($link, "USE `rush00`");
+            $query = "INSERT INTO users(`login`, `password`) VALUES('$log', '$pass')";
             $query = mysqli_query($link, $query);
+            header("Location: http://localhost:8200/index.php");
         }
-
     }
-    else
+    else {
         print_r($mas);
+    }
 }
 ?>
 <html>
@@ -46,7 +48,7 @@ if(isset($_POST['submit']))
             <br>			
             Repeat Password:  <input type="text" name="passwd2">
             <br>
-            <button name="submit">OK</button>
+            <input type="submit" name="submit" value="OK">
 		</form>
 	</div>
 </body>

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php 
+    require_once 'database.php';
+?>
 <html>
 <head>
     <title>rush00</title>
@@ -7,18 +10,9 @@
 </head>
 <body>
 <div class="container">
-    <div class="pannel">
-            <div class="logo">
-                    <img src="https://www.crelectro.com/img/my-shop-logo-1520386218.jpg">
-                </div>
-            <div class="basket">
-                <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/adiante-apps-app-templates-incos-in-grey/512/app_type_shop_512px_GREY.png"></a>
-            </div>
-            <div class="login">
-                <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png">
-                <a href="login.php">Login</a>
-            </div>
-        </div>
+        <?php
+            require_once('header.php');
+        ?>
         <div class="menu">
             <ul class="topmenu">
                 <li><a href="index.php">Phones</a></li>
@@ -76,9 +70,6 @@
                 <br />
                 <input type="button" name="Add" value="Add">
             </div>
-        </div>
-        <div class="second-row">
-
         </div>
     </div>
     <div class="footer">
