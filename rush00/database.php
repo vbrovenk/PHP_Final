@@ -13,4 +13,13 @@ if($link)
 else
     die('Ошибка подключения к серверу баз данных.');
 
+
+
+function getClean($value) {
+    $value = trim($value);
+    $value = stripslashes($value);
+    $value = $htmlspecialchars($value);
+    return ($value);
+}
+
 ?>

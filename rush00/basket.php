@@ -32,25 +32,8 @@
     </div>
     <div class="pruducts">
         <div class="firts-row">
-        <?php
-                if (isset($_GET['cat'])) {
-                $query_product = mysqli_query($link, "SELECT * FROM `products` WHERE `cat_id` = '".$_GET['cat']."'");
-                foreach ($query_product as $product) {
-        ?>
-            <div class="product">
-                <img src="<?php echo $product['photo']; ?>">
-                <br />
-                <div class="product_name"><p><?php echo $product['name']; ?></p></div>
-                <div class="price"><?php echo $product['price']; ?></div>
-                <br />
-                <!-- <a href="/save.php?product=product_id (id product database)"> -->
-                <div><a href="/add-to-basket.php?id=<?php echo $product['product_id']; ?>">ADD</a></div>
-            </div>
-        <?php } }?>
+        
         </div>
-    </div>
-    <div class="footer">
-
     </div>
 </div>
 </body>

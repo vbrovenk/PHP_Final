@@ -1,0 +1,21 @@
+table {
+    width: 800px;
+}
+
+table, td{
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 1px solid black;
+}
+
+table img {
+    width: 60px;
+}
+
+.choose {
+    font-size: 18px;
+   position: absolute;
+   top: 200px;
+   right: 450px;
+   /* text-decoration: underline; */
+}

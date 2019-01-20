@@ -5,7 +5,6 @@
         <?php
             if ($_SESSION['login'] == "admin") {
                 header("Location: http://localhost:8200/admin.php");
-
             ?>
              <div class="logout" style="float:right; font-size:20px;margin-right:16px;">
                     <p style="font-size:16px;margin-top:4px;margin-bottom: 5px;color:rgb(85, 83, 83)">Hello, <?php echo $_SESSION['login']?></p>    
@@ -17,7 +16,7 @@
             else if ($_SESSION['login']) {
             ?>
                 <div class="basket">
-                    <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/adiante-apps-app-templates-incos-in-grey/512/app_type_shop_512px_GREY.png"></a>
+                    <a href="basket.php"><img src="https://cdn4.iconfinder.com/data/icons/adiante-apps-app-templates-incos-in-grey/512/app_type_shop_512px_GREY.png"></a>
                 </div>
                 <div class="logout" style="float:right; font-size:20px;margin-right:16px;">
                     <p style="font-size:16px;margin-top:4px;margin-bottom: 5px;color:rgb(85, 83, 83)">Hello, <?php echo $_SESSION['login']?></p>    
@@ -28,7 +27,7 @@
         else {
         ?>
             <div class="basket">
-                <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/adiante-apps-app-templates-incos-in-grey/512/app_type_shop_512px_GREY.png"></a>
+                <a href="basket.php"><img src="https://cdn4.iconfinder.com/data/icons/adiante-apps-app-templates-incos-in-grey/512/app_type_shop_512px_GREY.png"></a>
             </div>
             <div class="login">
                 <img src="https://www.freeiconspng.com/uploads/user-login-icon-14.png">

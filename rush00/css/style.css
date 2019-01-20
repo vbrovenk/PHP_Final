@@ -2,12 +2,14 @@ body {
     background-color: #f0f5f5;
     margin: 0 0;
     padding: 0 0;
+
+    height: 100%;
 }
 
 .container {
     margin: 0 auto;
     width: 80%;
-    height: 900px;
+    height: 100%;
     background-color: white;
     /* border: 1px solid red; */
 }
@@ -144,7 +146,7 @@ body {
     margin-bottom: 0px;
 }
 
-.product input[type="button"] {
+.product input[type="submit"] {
     margin-left: 40px;
     width: 120px;
     font-size: 21px;
@@ -152,4 +154,10 @@ body {
     height: 30px;
     border-radius: 10px;
     background-color: green;
+}
+
+.active_cat
+{
+    background-color: #003300;
+    border-radius: 3px;
 }
