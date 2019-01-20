@@ -20,15 +20,17 @@
     </div>
     <div>
         <?php
-            // if (isset($_GET['new'])) {
-            //     $photo = getClean($_GET['photo']);
-            //     $name = getClean($_GET['name']);
-            //     $price = getClean($_GET['price']);
-            //     $category = getClean($_GET['price']);
-            //     if (!empty($_GET['photo']) && !empty($_GET['name']) && !empty($_GET['price']) && !empty($_GET['category'])) {
-            //         $query = "INSERT INTO `products` "
-            //     }
-            // }
+            if (isset($_POST['new'])) {
+                $photo = getClean($_POST['photo']);
+                $name = getClean($_POST['name']);
+                $price = getClean($_POST['price']);
+                $category = getClean($_POST['price']);
+                if (!empty($_POST['photo']) && !empty($_POST['name']) && !empty($_POST['price']) && !empty($_POST['category'])) {
+                    // $query = "INSERT INTO `products` (`name`, `price`, `photo`, `cat_id`) VALUES('$photo', '$name', '$price', '$category')";
+                    echo "OK";
+                    mysqli_query($link, $query);
+                }
+            }
             if (isset($_GET['del_product']))
             {
                 $query = "DELETE FROM `products` WHERE `product_id` = '".$_GET['del_product']."'";
@@ -70,7 +72,7 @@
                 ?>
 
             <div class="choose">
-                <form method="GET">
+                <form action="http://localhost:8200/admin.php" method="POST">
                     Photo: <input type="text" name="photo">
                     <br />
                     Name: <input type="text" name="name">

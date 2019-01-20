@@ -8,6 +8,7 @@ if (isset($_POST['login']) && isset($_POST['passwd']) && $_POST['submit'] == "OK
 	$pass = htmlspecialchars($_POST['passwd']);
 
 	if ($log != '' && $pass != '') {
+		$pass = hash('whirlpool', $pass);
 		$query = "SELECT * FROM `users` WHERE `login` = '$log' AND `password` = '$pass'";
 		$query = mysqli_query($link, $query);
 
@@ -18,9 +19,9 @@ if (isset($_POST['login']) && isset($_POST['passwd']) && $_POST['submit'] == "OK
 			$_SESSION['login'] = $row[1];
 			header("Location: http://localhost:8200/index.php");
 		}
-		else {
-			echo "Doesn't exist. Try again";
-		}
+		// else {
+		// 	echo "Doesn't exist. Try again";
+		// }
 	}
 }
 else {

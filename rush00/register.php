@@ -21,6 +21,7 @@ if(isset($_POST['submit']))
         {
             $_SESSION['login'] = $log;
             // mysqli_query($link, "USE `rush00`");
+            $pass = hash('whirlpool', $pass);
             $query = "INSERT INTO users(`login`, `password`) VALUES('$log', '$pass')";
             $query = mysqli_query($link, $query);
             header("Location: http://localhost:8200/index.php");

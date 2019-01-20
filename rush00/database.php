@@ -8,17 +8,17 @@ $db_name = "rush0";
 
 $link = mysqli_connect($db_host, $db_user, $db_password, $db_name);
 
-if($link)
-    echo 'Соединение установлено.';
-else
-    die('Ошибка подключения к серверу баз данных.');
+// if($link)
+//     echo 'Соединение установлено.';
+// else
+//     die('Ошибка подключения к серверу баз данных.');
 
 
 
 function getClean($value) {
     $value = trim($value);
     $value = stripslashes($value);
-    $value = $htmlspecialchars($value);
+    $value = htmlspecialchars($value);
     return ($value);
 }
 

@@ -6,6 +6,6 @@ if (!empty($_GET['id'])) {
     $temp[] = $_GET['id'];
     $_SESSION['items'] = $temp;
 
-    print_r($_SESSION);
+    header("Location: " . $_SERVER['HTTP_REFERER']);
 }
 ?>
