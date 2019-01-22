@@ -1,0 +1,42 @@
+
+<- Vector ----------------------------------------------------------------------
+The Vector class represents vector which consists of x, y, z, w.
+
+An instance can be constructed LIKE:
+$vtxO = new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0 ) );
+$vtcXunit = new Vector( array( 'dest' => $vtx0 ) );
+
+WHERE : 
+’dest’: the vector’s destination vertex, mandatory.
+’orig’: the vector’s origin vertex, optional, BY DEFAULT 
+it instance of class Vertex with x=0, y=0, z=0, w=1
+
+The class provides the following methods :
+
+float	magnitude();
+returns the vector’s length.
+
+Vector	normalize();
+returns a normalized version of the vector.
+
+Vector 	add( Vector $rhs );
+returns the sum vector of both vectors
+
+Vector 	sub( Vector $rhs );
+returns the difference vector of both vectors.
+
+Vector 	opposite();
+returns the opposite vector.
+
+Vector 	scalarProduct( $k );
+returns the multiplication of the vector with a scalar.
+
+float 	dotProduct( Vector $rhs );
+returns the scalar multiplication of both vectors.
+
+float 	cos( Vector $rhs );
+returns the angle’sAppendix cosine between both vectors.
+
+Vector 	crossProduct( Vector $rhs );
+returns the cross multiplication of both vectors (right-hand mark!)
+---------------------------------------------------------------------- Vector ->

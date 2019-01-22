@@ -1,0 +1,15 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class allows to represent point in space.
+
+An instance can be constructed like:
+new Vertex( array( 'x' => 9.0, 'y' => 9.0, 'z' => 9.0, 'w' => 3.0, 'color' => new Color('rgb' => 12345) ) );
+
+argument 'color' is an instance of the Color Class.
+
+If not specify arguments 'w' or 'color', then they would be set BY DEFAULT:
+
+'w' = 1.0;
+'color' = new instance of the color WHITE;
+
+---------------------------------------------------------------------- Vertex ->
