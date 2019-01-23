@@ -1,0 +1,28 @@
+
+<- Camera ----------------------------------------------------------------------
+
+Class Camera computes 'view matrix'.
+
+An instance can be constructed like:
+
+$vtxO = new Vertex( array( 'x' => 20.0, 'y' => 20.0, 'z' => 80.0 ) );
+$R    = new Matrix( array( 'preset' => Matrix::RY, 'angle' => M_PI ) );
+$cam  = new Camera( array( 'origin' => $vtxO,
+						   'orientation' => $R,
+						   'width' => 640,
+						   'height' => 480,
+						   'fov' => 60,
+						   'near' => 1.0,
+						   'far' => 100.0) );
+
+The Class’ constructor is waiting for an array. The following keys are required:
+
+- ’origin’: The vertex positioning the camera in the world mark.
+- ’orientation’: Rotation matrix orienting the camera in the world mark.
+- ’width’: Width in pixel of the desired image.
+- ’height’: Height in pixel of the desired image.
+- ’fov’ : The projected image’s field of view in in degree.
+- ’near’ : The near clipping plane.
+- ’far’ : The far clipping plane.
+
+---------------------------------------------------------------------- Camera ->
