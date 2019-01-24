@@ -1,0 +1,49 @@
+
+
+.content {
+	width: 1200px;
+}
+
+.field {
+	width: 1050px;
+	height: 700px;
+	float: left;
+
+}
+
+.field img{
+	width: 1000px;
+}
+
+.player1, .player2 {
+	width: 100px;
+	margin: 10px;
+	text-align: center;
+	background-color: green;
+	float: left;
+}
+
+.player1 img {
+	width: 150px;
+	position: absolute;
+	left: 0px;
+	top: 10px;
+}
+
+.player2 img {
+	width: 150px;
+	position: absolute;
+	left: 0px;
+	top: 10px;
+}
+
+.dice {
+	width: 150px;
+	position: absolute;
+	top: 550px;
+	left: 1050px;
+	text-align: center;
+}
+.dice img {
+	width: 100px;
+}

@@ -2,5 +2,4 @@
 interface IFighter {
 	function fight();
 }
-
 ?>
