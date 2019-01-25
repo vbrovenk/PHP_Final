@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#balloon {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="balloon" onclick="blow()" onmouseover="reverseColor()" onmouseleave="reverseColor()">
+		
+	</div>
+	<script type="text/javascript">
+		var width = 200;
+		var height = 200;
+		var color = ['red', 'green', 'blue'];
+		var indexColor = 0;
+
+		var elem = document.getElementById("balloon");
+
+		function blow() {
+			width += 10;
+			height += 10;
+
+			if (width > 420) {
+				width = 200;
+				height = 200;
+			}
+			indexColor += 1;
+			if (indexColor > 2) {
+				indexColor = 0;
+			}
+			elem.style.width = width + "px";
+			elem.style.height = height + "px";
+			elem.style.backgroundColor = color[indexColor];
+		}
+
+		function reverseColor() {
+			width -= 5;
+			height -= 5;
+
+			if (width < 200) {
+				width = 200;
+				height = 200;
+			}
+			indexColor -= 1;
+			if (indexColor < 0) {
+				indexColor = 2;
+			}
+			elem.style.width = width + "px";
+			elem.style.height = height + "px";
+			elem.style.backgroundColor = color[indexColor];
+		}
+	</script>
+</body>
+</html>

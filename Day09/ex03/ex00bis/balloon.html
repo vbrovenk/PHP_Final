@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<style>
+			div {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				border-radius: 50%;
+			}
+		</style>
+		<script>
+			var size = 200;
+			var colors = ['red', 'green', 'blue'];
+			var indexColor = 0;
+
+			$(document).ready(function() {
+				$("div").click(function() {
+					size += 10;
+					if (size > 420) {
+						size = 200;
+					}
+					indexColor++;
+					if (indexColor > 2) {
+						indexColor = 0;
+					}
+					change();
+				});
+				$("div").on('mouseenter mouseleave', function() {
+					size -= 5;
+					if (size < 200) {
+						size = 200;
+					}
+					indexColor--;
+					if (indexColor < 0) {
+						indexColor = 2;
+					}
+					change();
+				});
+
+				function change() {
+					$("div").css("width", size + "px");
+					$("div").css("height", size + "px");
+					$("div").css("background-color", colors[indexColor]);
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

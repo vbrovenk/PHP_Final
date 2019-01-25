@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script>
+			setInterval(function() { alert("Please, use me..."); }, 30000);
+		</script>
+	</head>
+	<body>
+		<input type="text" id="left">
+		<select id="operator">
+			<option value="1">+</option>
+			<option value="2">-</option>
+			<option value="3">*</option>
+			<option value="4">/</option>
+			<option value="5">%</option>
+		</select>
+		<input type="text" id="right">
+		<input type="submit" name="try" value="Try me!" onclick="tryMe()">
+		
+		<script>
+			var left;
+			var right;
+
+			function tryMe() {
+				left = document.getElementById("left").value;
+				right = document.getElementById("right").value;
+
+				if (isNumeric(left) == false || isNumeric(right) == false) {
+					alert("Error :(");
+					return;
+				}
+				if (+left < 0 || +right < 0) {
+					alert("Error :(");
+					return;
+				}
+				var oper = document.getElementById("operator").value;
+				if (oper == 1) {
+					out((+left) + (+right));
+				}
+				else if (oper == 2) {
+					out((+left) - (+right));
+				}
+				else if (oper == 3) {
+					out((+left) * (+right));
+				}
+				else if (oper == 4) {
+					if (+right == 0) {
+						out("It’s over 9000!");
+						return;
+					}
+					out((+left) / (+right));
+				}
+				else if (oper == 5) {
+					if (+right == 0) {
+						out("It’s over 9000!");
+						return;
+					}
+					out((+left) % (+right));
+				}
+
+				function out(message) {
+					alert(message);
+					console.log(message);
+				}
+
+				function isNumeric(n) {
+					return !isNaN(parseInt(n)) && isFinite(n);
+				}
+			}
+		</script>
+	</body>
+</html>
