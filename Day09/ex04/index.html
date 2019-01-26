@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="todo.js"></script>
 		<style type="text/css">
 			div {
-				width: 800px;
-				height: 500px;
-				border: 2px solid black;
-				border-radius: 4px;
+				height: 40px;
+				background-color: lightgreen;
+				margin-bottom: 10px;
+				border-radius: 8px;
+				padding: 10px;
+				font-family: sans-serif;
+				color: grey;
+			}
+
+			#ft_list{
+				background-color: lightgrey;
+				height: 100%;
+				width: 600px;
+				margin: 0 auto;
 			}
 		</style>
 	</head>
 	<body>
 		<div id="ft_list">
+			<input type="submit" value="New" id="New">
 		</div>
-		<input type="submit" value="New" id="New">
 	</body>
 </html>

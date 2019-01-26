@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 			$(elem).attr("class", "element");
 			$(elem).attr("id", id);
-			document.cookie = id + "=" + message;
+			$.cookie = id + "=" + message;
 			id++;
 			$("#ft_list").prepend(elem);
 		}
@@ -18,13 +18,13 @@ $(document).ready(function() {
 		var result = confirm("Confirm deleting this TODO");
 		if (result == true) {
 			$(this).remove();	
-			document.cookie = $(this).attr("id") + "=; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+			$.cookie = $(this).attr("id") + "=; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
 		}
 	});
 
 
-	if (document.cookie) {
-		var cookies = document.cookie;
+	if ($.cookie) {
+		var cookies = $.cookie;
 		var names = cookies.match( /\d+=/g );
 		var values = cookies.match( /=\w+/g );
 		for (var i = 0; i < names.length; i++) {

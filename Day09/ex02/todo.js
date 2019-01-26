@@ -2,7 +2,7 @@ var id;
 
 document.getElementById("New").onclick = function() {
 	var message = prompt("input new todo", "");
-	if (message.trim() != "") {
+	if (message.trim() != "" && message != null) {
 		var list = document.getElementById("ft_list");
 		var element = document.createElement("div");
 		element.innerHTML = message;
